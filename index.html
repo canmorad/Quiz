@@ -12,71 +12,7 @@
 </head>
 
 <body>
-    <section class="header">
-        <div class="container">
-            <button class="precedent"><i class="fa-solid fa-arrow-left"></i></button>
-            <p class="header-text">Question <span class="nombre-question">1</span>/10</p>
-            <button class="sauvegarder"><i class="fa-solid fa-bookmark"></i></button>
-        </div>
-    </section>
-
-    <section class="card">
-        <div class="container">
-            <div class="question">
-                Que signifie “DOM” en JavaScript ?
-            </div>
-
-            <button class="button-choix choisir" id="button-A" onclick="changerBackgroundBottonChoix('A')">
-                <p>A</p>
-                <p class="text-choix">Document Object Model</p>
-                <input class="choix choisir" type="radio" name="choix" id="choix-A" value="A">
-            </button>
-
-            <button class="button-choix" id="button-B" onclick="changerBackgroundBottonChoix('B')">
-                <p>B</p>
-                <p class="text-choix">Data Object Method</p>
-                <input class="choix " type="radio" name="choix" id="choix-B" value="B">
-            </button>
-
-            <button class="button-choix" id="button-C" onclick="changerBackgroundBottonChoix('C')">
-                <p>C</p>
-                <p class="text-choix">Dynamic Output Management</p>
-                <input class="choix" type="radio" name="choix" id="choix-C" value="C">
-            </button>
-
-            <button class="button-choix" id="button-D" onclick="changerBackgroundBottonChoix('D')">
-                <p>D</p>
-                <p class="text-choix">Digital Object Mappe</p>
-                <input class="choix" type="radio" name="choix" id="choix-D" value="D">
-            </button>
-
-            <button class="suivante" onclick="afficherQuestionSuivante()">SUIVANTE</button>
-
-        </div>
-    </section>
-
-    <section class="score">
-        <div class="container">
-            <h2>Résultat Du Quiz</h2>
-            <div class="medaille">
-                <img class="img1" src="award.png" alt="">
-                <img class="img2" src="woman.png" alt="">
-            </div>
-            <h3>Félicitations !</h3>
-            <p>VOTRE SCORE</p>
-            <p class="text-score"><span class="point">10 </span> / 10</p>
-            <p class="">PIÈCES GAGNÉES</p>
-
-            <div class="coins">
-                <i class="fa-solid fa-coins"></i>
-                <p>500</p>
-            </div>
-
-            <button class="home" onclick="afficherQuestionSuivante() ">Refaire le quiz</button>
-        </div>
-
-    </section>
-
+    
     <script src="script.js"></script>
 </body>
 

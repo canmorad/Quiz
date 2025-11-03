@@ -13,8 +13,8 @@ body {
   max-width: 500px;
 }
 .header {
-  margin-top: 30px;
   display: flex;
+  margin-top: 30px;
   justify-content: center;
 }
 .header .container {
@@ -28,14 +28,36 @@ body {
   border-radius: 50%;
   padding: 10px;
 }
+.header .container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  transition: background 0.3s linear;
+}
+.header .container .circle .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.header .container .circle .timer p {
+  font-size: 15px;
+  font-weight: bold;
+}
 .header .container .header-text {
   color: white;
 }
 .card {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
   height: calc(100vh - 130px);
+  margin-top: 30px;
 }
 .card .container {
   display: flex;
@@ -174,4 +196,61 @@ body {
   border: none;
   color: white;
   font-size: 20px;
+}
+.choix-quiz {
+  display: flex;
+  justify-content: center;
+}
+.choix-quiz .container h3 {
+  color: white;
+  text-align: center;
+}
+.choix-quiz .container .card-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+.choix-quiz .container .card-quiz .card-choix {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+.choix-quiz .container .card-quiz .card-choix .titre {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.choix-quiz .container .card-quiz .card-choix .titre #html {
+  font-size: 40px;
+  color: orangered;
+}
+.choix-quiz .container .card-quiz .card-choix .titre #css {
+  font-size: 40px;
+  color: #2a2ab8;
+}
+.choix-quiz .container .card-quiz .card-choix .titre #js {
+  font-size: 40px;
+  color: #bff010;
+}
+.choix-quiz .container .card-quiz .card-choix .info {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 10px;
+}
+.choix-quiz .container .card-quiz .card-choix .info .time {
+  display: flex;
+  align-items: center;
+}
+.choix-quiz .container .card-quiz .card-choix button {
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
 }
